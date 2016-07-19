@@ -2,7 +2,7 @@ div{
     float: left;
 }
 body{
-    height: 3000px;
+    height: 1200px;
 }
 .header{
     height:200px;
@@ -17,7 +17,7 @@ body{
 .navbar {
     height:100px;
     width: 100%;
-    background: yellow;
+    background: #dede44;
     color: white;
     font-size:30px;
     text-align: center;
@@ -51,42 +51,61 @@ body{
     line-height:100PX;
 }
 .nav{
-background: white;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
 }
 .nav>li{
+width:200px;
+padding:15px 15px;
 display: inline-block;
 position: relative;
 border: 1px solid #ddd;
-border-right: 0;
-padding: .5em 1em;
 margin-left: -5px;
 box-sizing: border-box;
-width: 25%;
+background-image: url(images/1234.png);
 }
 .nav>li:last-child{
-border-right: 1px solid #ddd;
+border-right: -1px solid #ffffff;
 }
 .nav>li:hover .submenu{
 display: block;
 }
 .submenu{
-width: 200px;
-padding: 0px;
-background: gray;
+width:200px;
+padding: 1px;
+background-image: url(images/1234.png);
 border: 1px solid #ddd;
 border-radius: 5px;
 position: absolute;
 left: -1px;
-top: 100%;
+top: 105%;
+box-sizing: border-box;
 display: none;
+font-family: arial;
+font-size: 15px;
 }
 .submenu li{
 padding: .5em 15px;
-color: black;
+color: white;
 cursor: pointer;
 list-style-type:none;
 }
 .submenu li:hover{
-color: gray;
+color: black;
 background: white;
+cursor: pointer;
+}
+.absolute {
+  position: fixed;
+  background: red;
+  right: 50px;
+  bottom: 50px;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  font-size: 100px;
+  text-align: center;
+  color: lightgreen;
 }
